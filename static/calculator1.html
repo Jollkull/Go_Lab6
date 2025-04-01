@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Power Calculator</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1>Equipment Power Calculator</h1>
+            <p class="subtitle">Task 6 - Power Parameters Calculation</p>
+        </div>
+        
+        <div class="calculator-card">
+            <form id="calculator1">
+                <div class="form-group">
+                    <label for="input1">Номінальна потужність (Шліфувальний верстат) Рн, кВт:</label>
+                    <input type="number" step="any" id="input1" required placeholder="Enter value">
+                </div>
+                
+                <div class="form-group">
+                    <label for="input2">Коефіцієнт використання (Полірувальний верстат) КВ:</label>
+                    <input type="number" step="any" id="input2" required placeholder="Enter value">
+                </div>
+                
+                <div class="form-group">
+                    <label for="input3">Коефіцієнт реактивної потужності (Циркулярна пила):</label>
+                    <input type="number" step="any" id="input3" required placeholder="Enter value">
+                </div>
+                
+                <button type="submit" class="calculate-btn">Calculate</button>
+            </form>
+            
+            <div class="result-container">
+                <p id="result">Result will appear here</p>
+            </div>
+        </div>
+        
+        <div class="navigation-buttons">
+            <button onclick="location.href='index.html'" class="nav-btn">Back to Home</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
